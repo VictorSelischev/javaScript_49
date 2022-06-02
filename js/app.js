@@ -176,6 +176,7 @@ const bmi = (weightNum / Math.pow(heightNum, 2)).toFixed(2)
 //  const value = incomingValue || defaultValue;
 //  console.log(value);
 
+
 /**
  * Example 10 - Опертор % и методы строк
  * Напиши скрипт который переведёт значение totalMinutes (количество минут) в строку в формате часов и минут HH:MM.
