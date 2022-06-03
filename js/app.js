@@ -142,7 +142,7 @@ const bmi = (weightNum / Math.pow(heightNum, 2)).toFixed(2)
 // console.log('0' === false);
 // console.log('Papaya' < 'papaya');
 // console.log('Papaya' === 'papaya');
-// console.log(undefined == null); 
+// console.log(undefined == null);
 // console.log(undefined === null);
 
 
@@ -178,10 +178,24 @@ const bmi = (weightNum / Math.pow(heightNum, 2)).toFixed(2)
 
 
 /**
- * Example 10 - Опертор % и методы строк
+ * Example 10 - Оператор % и методы строк
  * Напиши скрипт который переведёт значение totalMinutes (количество минут) в строку в формате часов и минут HH:MM.
  *
  * 70 покажет 01:10
  * 450 покажет 07:30
  * 1441 покажет 24:01
  */
+
+// 1. Сделать переменную totalMinutes
+const totalMinutes = 450;
+let minutes;
+// 2. Найти количество часов в минутах (разделить на 60)
+const hours = Math.floor(totalMinutes / 60);
+// 3. Найти количество оставшихся минут (разделить на 60)
+minutes = totalMinutes % 60;
+// Если остаток меньше 10, то дописать спереди "0"
+minutes < 10 ? minutes = "0" + minutes : minutes = minutes;
+
+// 4. Вывести в консоль шаблонную строку
+console.log(`Время составляет ${hours}:${minutes}`);
+
