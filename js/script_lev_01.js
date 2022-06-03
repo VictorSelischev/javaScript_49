@@ -1,17 +1,17 @@
-alert('Молилась ли ты на ночь Десдемона?');
-const shouldRenew = confirm('Точно молилась?');
-console.log(shouldRenew);
+// alert('Молилась ли ты на ночь Десдемона?');
+// const shouldRenew = confirm('Точно молилась?');
+// console.log(shouldRenew);
 
-if (shouldRenew === true) {
-    const prayer = prompt('Введи название молитвы "Отче Наш"');
-    if (prayer === 'Отче Наш') {
-        alert('Спокойной ночи, любимая!');
-    } else {
-        alert('Ты умрешь!');
-    }
-} else {
-    alert('Ты умрешь!');
-}
+// if (shouldRenew === true) {
+//     const prayer = prompt('Введи название молитвы "Отче Наш"');
+//     if (prayer === 'Отче Наш') {
+//         alert('Спокойной ночи, любимая!');
+//     } else {
+//         alert('Ты умрешь!');
+//     }
+// } else {
+//     alert('Ты умрешь!');
+// }
 
 // ---------------------------------
 // const x = 5;
@@ -46,3 +46,29 @@ if (shouldRenew === true) {
 // console.log('Случайное число от 0 до 100: ', random);
 
 // console.log('Логическое И равно: ', 5 && NaN && 'qwerty');
+
+// for (let i = 0; i <= 20; i += 5) {
+//   console.log(i);
+// }
+
+// const max = 10;
+// for (let i = 0; i < max; i += 1) {
+//   console.log(`${max} % ${i} = `, max % i);
+// }
+
+
+// for (let i = 0; i <= 5; i += 1) {
+//   console.log(i);
+
+//   if (i === 3) {
+//     console.log("Нашли число 3, прерываем выполнение цикла");
+//     break;
+//   }
+// }
+
+// console.log("Лог после цикла");
+
+
+for (let i = 1; i <= 500; i += 50) {
+    console.log(i);
+}
