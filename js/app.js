@@ -187,14 +187,14 @@ const bmi = (weightNum / Math.pow(heightNum, 2)).toFixed(2)
  */
 
 // 1. Сделать переменную totalMinutes
-const totalMinutes = 450;
+const totalMinutes = 1441;
 let minutes;
 // 2. Найти количество часов в минутах (разделить на 60)
 const hours = Math.floor(totalMinutes / 60);
 // 3. Найти количество оставшихся минут (разделить на 60)
 minutes = totalMinutes % 60;
 // Если остаток меньше 10, то дописать спереди "0"
-minutes < 10 ? minutes = "0" + minutes : minutes = minutes;
+minutes = minutes < 10 ? "0" + minutes : minutes;
 
 // 4. Вывести в консоль шаблонную строку
 console.log(`Время составляет ${hours}:${minutes}`);
