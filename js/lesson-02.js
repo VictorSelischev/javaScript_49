@@ -20,6 +20,7 @@
 // const answer = prompt("Какое официальное название JavaScript?")
 // const rightAnswer = 'ECMAScript'
 
+
 // if (answer.toLowerCase() === rightAnswer.toLowerCase()) {
 //     alert("Верно!")
 // } else if (answer === null) {
@@ -50,6 +51,7 @@
 
 // const answer = prompt('Enter a number')
 // const num = Number(answer)
+// console.log(Number(answer));
 
 // if (num > 0) {
 //     console.log("Это положительное число")
@@ -166,7 +168,7 @@ const daysUntilDeadline = 5;
 
 /**
  * Example 7 - Цикл for
- * Вывести к консоль каждый символ из строки
+ * Вывести в консоль каждый символ из строки
  */
 // const str = "Hello World";
 
@@ -203,11 +205,11 @@ const daysUntilDeadline = 5;
 const max = 100;
 const min = 20;
 
-for (let i = min; i <= max; i += 1) {
-    if (i % 5 === 0) {
-        console.log(i)
-    }
-}
+// for (let i = min; i <= max; i += 1) {
+//     if (i % 5 === 0) {
+//         console.log(i)
+//     }
+// }
 
 
 // ==================
@@ -259,3 +261,5 @@ const text = `Думи мої, думи мої,
 
 const string = 'xo';
 let res = false;
+
+console.log(string.charAt(1));
