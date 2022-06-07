@@ -8,14 +8,44 @@
 
 
 
-const clients = ["Mango", "Ajax", "Poly"];
+// const clients = ["Mango", "Ajax", "Poly"];
 
-for (const client of clients) {
-  console.log(client);
+// for (const client of clients) {
+//   console.log(client);
+// }
+
+// const string = "javascript";
+
+// for (const character of string) {
+//   console.log(character);
+// }
+
+const woods = ['beech', 'rowan', 'apple'];
+
+for (let i = 0; i < woods.length; i += 1) {
+  console.log(woods[i]);
 }
 
-const string = "javascript";
+const newWood = woods.length;
+console.log(woods.length);
 
-for (const character of string) {
-  console.log(character);
+console.log('--------------------------');
+
+const newWood2 = woods.unshift('oak');
+
+for (let i = 0; i < woods.length; i += 1) {
+  console.log(woods[i]);
 }
+
+console.log(newWood2);
+
+console.log('--------------------------');
+
+const newWood3 = woods.push('cherry');
+
+for (let i = 0; i < woods.length; i += 1) {
+  console.log(woods[i]);
+}
+
+console.log(newWood3);
+
