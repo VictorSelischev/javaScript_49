@@ -74,19 +74,95 @@
 
 
 
-function makeArray(firstArray, secondArray, maxLength) {
-    // Change code below this line
+// function makeArray(firstArray, secondArray, maxLength) {
+//     // Change code below this line
 
-  const allArray = firstArray.concat(secondArray);
-  const newArray = allArray.slice(0, maxLength);
+//   const allArray = firstArray.concat(secondArray);
+//   const newArray = allArray.slice(0, maxLength);
 
-  return newArray;
+//   return newArray;
 
 
-    // Change code above this line
-}
+//     // Change code above this line
+// }
   
 
 
-console.log(makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3));
-console.log(makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 16));
+// console.log(makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3));
+// console.log(makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 16));
+
+
+
+// function createArrayOfNumbers(min, max) {
+//   const numbers = [];
+//   // Change code below this line
+// console.log(numbers);
+
+
+//   for (let i = min; i <= max; i += 1) {
+//     numbers.push(i);
+//     console.log(numbers);
+//   }
+
+  // Change code above this line
+  // return numbers;
+// }
+
+
+
+
+// Напиши функцию getCommonElements(array1, array2) которая получает два массива произвольной длины в параметры array1 и array2, и возвращает новый массив, состоящий из тех элементов, которые присутствуют в обоих исходных массивах.
+
+// Вариант 1
+// function getCommonElements(array1, array2) {
+//   // Change code below this line
+
+//   const newArray = [];
+
+//   for (i = 0; i < array1.length; i += 1) {
+
+//     for (j = 0; j < array2.length; j += 1) {
+//       if (array1[i] === array2[j]) {
+//         newArray.push(array1[i])
+//       }
+//     }
+
+//   }
+
+//   return newArray;
+
+//  // Change code above this line
+// }
+
+
+// Вариант 2
+
+// function getCommonElements(array1, array2) {
+//   // Change code below this line
+
+//   const newArray = [];
+
+//   for (i = 0; i < array1.length; i += 1) {
+//     if (array2.includes(array1[i])) {
+//       newArray.push(array1[i])
+//     }
+
+//   }
+
+//   return newArray;
+
+//  // Change code above this line
+// }
+
+
+
+
+const string = 'объявляет цикл';
+const stringArray = [];
+
+for (const char of string) {
+  // console.log(char);
+  stringArray.push(char);
+}
+
+console.log(stringArray);
