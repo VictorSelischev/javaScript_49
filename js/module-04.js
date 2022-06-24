@@ -59,8 +59,14 @@ console.log(tags);
 // то создаем его и записывает ему значение 0.
 // В противном случае увеличиваем значение на 1.
 const getTagStats = (acc, tag) => {
+
+  // Делаем проверку на наличие свойства в объекте. Если свойства нет, то создаем его и присваиваем значение 0
   if (!acc.hasOwnProperty(tag)) {
     acc[tag] = 0;
+
+    console.log(!acc.hasOwnProperty(tag));
+    console.log(tag);
+
   }
 
   acc[tag] += 1;
