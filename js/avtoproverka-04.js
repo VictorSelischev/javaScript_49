@@ -149,24 +149,24 @@ const users =
         }
     ];
 
-    // Change code below this line
-const getUsersWithFriend = (users, friendName) => {
-   const allFriends = users.filter(user => {
+//     // Change code below this line
+// const getUsersWithFriend = (users, friendName) => {
+//    const allFriends = users.filter(user => {
     
-    for (const friend of user.friends) {
-        if (friend === friendName) return true;
-    }
+//     for (const friend of user.friends) {
+//         if (friend === friendName) return true;
+//     }
     
-    });
+//     });
 
-    return allFriends;
-};
-// Change code above this line
+//     return allFriends;
+// };
+// // Change code above this line
 
 
-console.log(getUsersWithFriend(users, "Briana Decker"));
-console.log(getUsersWithFriend(users, "Goldie Gentry"));
-console.log(getUsersWithFriend(users, "Adrian Cross"));
+// console.log(getUsersWithFriend(users, "Briana Decker"));
+// console.log(getUsersWithFriend(users, "Goldie Gentry"));
+// console.log(getUsersWithFriend(users, "Adrian Cross"));
 
 // Привіт! Я flatMap не використовував. Використовував filter, в ньому деструктуризував friends і через includes шукав friendName, це все.
 
@@ -174,7 +174,10 @@ console.log(getUsersWithFriend(users, "Adrian Cross"));
 
 
 
-
+const allFriends = users.map(user => user.friends);
+console.log(allFriends);
+const oldFriends = users.flatMap(user => user.friends);
+console.log(oldFriends);
 
 
 
