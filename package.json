@@ -1,0 +1,21 @@
+{
+  "name": "javascript_49",
+  "version": "1.0.0",
+  "description": "study kurs of goit",
+  "main": "index.js",
+  "scripts": {
+"start": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VictorSelischev/javaScript_49.git"
+  },
+  "keywords": [],
+  "author": "Victor Selischev <selischev.victor.kharkov@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VictorSelischev/javaScript_49/issues"
+  },
+  "homepage": "https://github.com/VictorSelischev/javaScript_49#readme"
+}
